@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\StoredOfBuild.Data",
+    "\\StoredOfBuild.Data\\Migrations",
+    "\\StoredOfBuild.Domain",
+    "\\StoredOfBuild.Domain\\DTOs",
+    "\\StoredOfBuild.Domain\\Products",
+    "\\StoredOfBuild.Web",
+    "\\StoredOfBuild.Web\\Controllers"
+  ],
+  "SelectedNode": "\\StoredOfBuild.Domain\\Products\\CategoryStorer.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,12 @@
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Data\bin\Debug\netcoreapp2.0\StoredOfBuild.Data.deps.json
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Data\bin\Debug\netcoreapp2.0\StoredOfBuild.Data.dll
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Data\bin\Debug\netcoreapp2.0\StoredOfBuild.Data.pdb
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Data\bin\Debug\netcoreapp2.0\StoredOfBuild.Domain.dll
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Data\bin\Debug\netcoreapp2.0\StoredOfBuild.Domain.pdb
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Data\obj\Debug\netcoreapp2.0\StoredOfBuild.Data.csprojResolveAssemblyReference.cache
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Data\obj\Debug\netcoreapp2.0\StoredOfBuild.Data.csproj.CoreCompileInputs.cache
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Data\obj\Debug\netcoreapp2.0\StoredOfBuild.Data.AssemblyInfoInputs.cache
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Data\obj\Debug\netcoreapp2.0\StoredOfBuild.Data.AssemblyInfo.cs
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Data\obj\Debug\netcoreapp2.0\StoredOfBuild.Data.csproj.CopyComplete
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Data\obj\Debug\netcoreapp2.0\StoredOfBuild.Data.dll
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Data\obj\Debug\netcoreapp2.0\StoredOfBuild.Data.pdb
