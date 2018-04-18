@@ -4,9 +4,8 @@ using System.Text;
 
 namespace StoredOfBuild.Domain
 {
-   public class DomainException : Exception
+    public class DomainException : Exception
     {
-
         public DomainException(string error) : base(error)
         {
 
@@ -14,10 +13,9 @@ namespace StoredOfBuild.Domain
 
         public static void When(bool hasError, string error)
         {
-            if (!hasError)
-            {
+
+            if (hasError)
                 throw new DomainException(error);
-            }
         }
     }
 }

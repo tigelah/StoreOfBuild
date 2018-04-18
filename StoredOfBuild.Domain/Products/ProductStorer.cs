@@ -1,5 +1,4 @@
-﻿using StoredOfBuild.Domain.DTOs;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -15,21 +14,20 @@ namespace StoredOfBuild.Domain.Products
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
         }
-        public void Store(ProductDTO dto)
-        {
-            var category = _categoryRepository.GetById(dto.Categoryid);
-            DomainException.When(category == null, "Categoria não existe ou invalida.");
 
-            var product = _productRepository.GetById(dto.Id);
+        public void Store(int id, string name, int categoryId, decimal price, int StockQuantity)
+        {
+            var category = _categoryRepository.GetById(categoryId);
+            DomainException.When(category == null, "Category invalid");
+
+            var product = _productRepository.GetById(id);
             if (product == null)
             {
-                product = new Product(dto.Name, category, dto.Price, dto.StockQuantity);
+                product = new Product(name, category, price, StockQuantity);
                 _productRepository.Save(product);
             }
             else
-            {
-                product.Update(dto.Name, category, dto.Price, dto.StockQuantity);
-            }
+                product.Update(name, category, price, StockQuantity);
         }
     }
 }

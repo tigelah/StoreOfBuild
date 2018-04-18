@@ -1,4 +1,4 @@
-﻿using StoredOfBuild.Domain.DTOs;
+﻿using StoredOfBuild.Domain;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,19 +14,17 @@ namespace StoredOfBuild.Domain.Products
             _categoryRepository = categoryRepository;
         }
 
-        public void Store(CategoryDTO dto)
+        public void Store(int id, string name)
         {
-            var category = _categoryRepository.GetById(dto.Id);
+            var category = _categoryRepository.GetById(id);
 
             if (category == null)
             {
-                category = new Category(dto.Name);
-                _categoryRepository.Save(category); 
+                category = new Category(name);
+                _categoryRepository.Save(category);
             }
             else
-            {
-                category.Update(dto.Name);
-            }
+                category.Update(name);
         }
     }
 }

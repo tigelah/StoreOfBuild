@@ -6,4 +6,3 @@ G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Domain\obj\Debug\netcoreapp2.0\StoredO
 G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Domain\obj\Debug\netcoreapp2.0\StoredOfBuild.Domain.AssemblyInfo.cs
 G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Domain\obj\Debug\netcoreapp2.0\StoredOfBuild.Domain.dll
 G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Domain\obj\Debug\netcoreapp2.0\StoredOfBuild.Domain.pdb
-G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.Domain\obj\Debug\netcoreapp2.0\StoredOfBuild.Domain.csprojResolveAssemblyReference.cache

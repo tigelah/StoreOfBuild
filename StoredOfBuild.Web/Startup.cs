@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using StoredOfBuild.DI;
+using StoredOfBuild.Domain;
+using StoredOfBuild.Web.Filters;
 
 namespace StoredOfBuild.Web
 {
@@ -24,12 +26,23 @@ namespace StoredOfBuild.Web
         {
             Bootstrap.Configure(services, Configuration.GetConnectionString("DB_StoreOfBuild"));
 
-            services.AddMvc();
+            services.AddMvc( config => {
+                config.Filters.Add(typeof(CustomExceptionFilter));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.Use(async (context, next) =>
+            {
+                //Request
+                await next.Invoke();
+                //Response
+                var unitOfWork = (IUnitOfWork)context.RequestServices.GetService(typeof(IUnitOfWork));
+                await unitOfWork.Commit();
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();

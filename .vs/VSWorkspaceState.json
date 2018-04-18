@@ -2,13 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\StoredOfBuild.Data",
-    "\\StoredOfBuild.Data\\Migrations",
+    "\\StoredOfBuild.Data\\Repositories",
     "\\StoredOfBuild.Domain",
-    "\\StoredOfBuild.Domain\\DTOs",
     "\\StoredOfBuild.Domain\\Products",
     "\\StoredOfBuild.Web",
-    "\\StoredOfBuild.Web\\Controllers"
+    "\\StoredOfBuild.Web\\Models",
+    "\\StoredOfBuild.Web\\Views",
+    "\\StoredOfBuild.Web\\Views\\Category",
+    "\\StoredOfBuild.Web\\Views\\Product",
+    "\\StoredOfBuild.Web\\Views\\Shared"
   ],
-  "SelectedNode": "\\StoredOfBuild.Domain\\Products\\CategoryStorer.cs",
+  "SelectedNode": "\\StoredOfBuild.Web\\Controllers\\ProductController.cs",
   "PreviewInSolutionExplorer": false
 }

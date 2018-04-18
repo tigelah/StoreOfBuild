@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace StoredOfBuild.Domain
 {
-    public class Entity
+    public interface IUnitOfWork
     {
-        public int Id { get; protected set; }
+        Task Commit();
     }
 }

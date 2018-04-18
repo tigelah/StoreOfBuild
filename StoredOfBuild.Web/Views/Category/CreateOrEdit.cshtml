@@ -1,6 +1,6 @@
-﻿
+﻿@model StoredOfBuild.Web.Models.CategoryViewModel
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Category";
 }
 
 <div class="row header">
@@ -11,19 +11,28 @@
 </div>
 <div class="row form-wrapper">
     <div class="col-md-12">
-        <form id="form" class="form-horizontal" asp-action="CreateOrEdit" asp-controller="Category" asp-anti-forgery>
+        <form id="form" class="form-horizontal" asp-action="CreateOrEdit" asp-controller="Category"
+               data-ajax="true" data-ajax-method="POST" data-ajax-failure="formOnFail" data-ajax-success="window.location = '/Category'"
+              asp-anti-forgery>
+            <input type="hidden" class="form-control" asp-for="Id" />
             <div class="form-group">
                 <label class="col-md-2 control label">Name</label>
                 <div class="col-md-8">
-                    <input class="form-control"  />
+                    <input type="text" class="form-control" asp-for="Name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-8">
-                    <button class="btn btn success">Save</button>
+                    <button class="btn btn-success">Save</button>
                 </div>
             </div>
         </form>
     </div>
 </div>
 
+@section Scripts{ 
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/jquery.unobtrusive-ajax.min.js"></script>
+}
