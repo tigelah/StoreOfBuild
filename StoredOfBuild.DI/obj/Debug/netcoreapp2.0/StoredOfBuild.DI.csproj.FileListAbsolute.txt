@@ -12,3 +12,5 @@ G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.DI\obj\Debug\netcoreapp2.0\StoredOfBui
 G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.DI\obj\Debug\netcoreapp2.0\StoredOfBuild.DI.csproj.CopyComplete
 G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.DI\obj\Debug\netcoreapp2.0\StoredOfBuild.DI.dll
 G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.DI\obj\Debug\netcoreapp2.0\StoredOfBuild.DI.pdb
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.DI\bin\Debug\netcoreapp2.0\StoredOfBuild.DI.runtimeconfig.json
+G:\Rodrigo C#\StoredOfBuild\StoredOfBuild.DI\bin\Debug\netcoreapp2.0\StoredOfBuild.DI.runtimeconfig.dev.json
